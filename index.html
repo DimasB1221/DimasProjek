@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Saya</title>
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f0f0f0;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .container {
+      padding: 40px;
+    }
+    .flexbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    .text {
+      flex: 1;
+    }
+    .image img {
+      width: 600px;
+      height: 400px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+    td, th {
+      border: 1px solid #aaa;
+      padding: 20px;
+      text-align: center;
+    }
+    .portfolio-img {
+      width: 350px;
+      height: 200px;
+      background-color: #ddd;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Section 1: Navigasi -->
+<header>
+  <div class="brand"><strong>Brand</strong></div>
+  <nav>
+    <a href="#header">Header</a>
+    <a href="#biodata">Biodata</a>
+    <a href="#portofolio">Portofolio</a>
+  </nav>
+</header>
+
+<!-- Section 2: Judul + Gambar -->
+<div class="container" id="header">
+  <div class="flexbox">
+    <div class="text">
+      <h1>Selamat Datang di Website Saya</h1>
+      <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+      <p><a href="#">Pelajari Lebih Lanjut</a></p>
+    </div>
+    <div class="image">
+      <img src="contoh profil.jpg" alt="Gambar Header">
+    </div>
+  </div>
+</div>
+
+<!-- Section 3: Biodata -->
+<div class="container" id="biodata">
+  <h2>About Me</h2>
+  <p style="text-align:center;">A brief introduction about myself</p>
+  <table>
+    <tr>
+      <td>Full Name</td>
+      <td>Education</td>
+      <td>Pekerjaan</td>
+    </tr>
+    <tr>
+      <td>Contact</td>
+      <td>Hobi</td>
+      <td>Alamat</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Section 4: Portofolio -->
+<div class="container" id="portofolio">
+  <h2>Portofolio</h2>
+  <table>
+    <tr>
+      <td>
+        <div class="portfolio-img"></div>
+        <p><strong>Proyek 1</strong><br>Deskripsi proyek 1.</p>
+      </td>
+      <td>
+        <div class="portfolio-img"></div>
+        <p><strong>Proyek 2</strong><br>Deskripsi proyek 2.</p>
+      </td>
+      <td>
+        <div class="portfolio-img"></div>
+        <p><strong>Proyek 3</strong><br>Deskripsi proyek 3.</p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
