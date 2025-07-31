@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Style -->
+
+    <link rel="stylesheet" href="Tugas5.css">
+    <title>E-Commerce Product List</title>
+  </head>
+  <body>
+    <!-- 
+    Header Section 
+    -->
+    <header>
+        <div class="container-fluid text-white d-flex flex-column justify-content-center text-center" style="height: 200px; background-color: #5B2333;">
+            <h1 class="dt">Toko Online</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, suscipit?</p>
+        </div>
+    </header>
+    <!-- 
+    Main Section
+     -->
+    <section class="mt-5">
+      <!-- Filter Section -->
+      <div class="container-fluid row gap-2 ">
+        <div class="kategori col-lg-4 col-md-4 col-sm-12">
+           <label for="categoryFilter" class="form-label">
+              <i class="fas fa-tags filter-icon"></i>Kategori
+            </label>
+            <select id="categoryFilter" class="form-select">
+              <option value="semua">Semua Kategori</option>
+              <option value="elektronik">Elektronik</option>
+              <option value="fashion">Fashion</option>
+              <option value="perabotan">Rumah Tangga</option>
+              <option value="buku">Buku</option>
+            </select>
+        </div>
+        <div class="range-harga col-lg-4 col-md-4 col-sm-12">
+          <label for="priceFilter" class="form-label">
+            <i class="fas fa-money-bill-wave filter-icon"></i>Rentang Harga
+          </label>
+          <select id="priceFilter" class="form-select">
+            <option value="">Semua Harga</option>
+            <option value="0-100000">Di bawah Rp 100.000</option>
+            <option value="100000-500000">Rp 100.000 - 500.000</option>
+            <option value="500000-1000000">Rp 500.000 - 1.000.000</option>
+            <option value="1000000-999999999">Di atas Rp 1.000.000</option>
+          </select>
+        </div>
+        <div class="search-bar col-lg-4 col-md-4 col-sm-12">
+          <label for="searchInput" class="form-label">
+            <i class="fas fa-search filter-icon"></i>Cari Produk
+          </label>
+          <input type="text" id="searchInput" class="form-control" placeholder="Masukkan nama produk...">
+        </div>
+      </div>
+       <!-- List Product Section -->
+      <div class="product container-fluid mt-4" id="product-list">
+        <div class="row">
+          <!-- Disini Tempat Product Ditampilkan -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="Tugas5.js"></script>
+  </body>
+</html>
